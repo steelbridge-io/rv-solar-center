@@ -28,7 +28,7 @@ add_action( 'customize_register', function( $wp_customize ) {
 
     // Add Panel
     $wp_customize->add_panel( 'wellington', array(
-        'title' => __( 'Wellington Studio Settings', 'wellington-studio' ),
+        'title' => __( 'RV Solar Theme Settings', 'wellington-studio' ),
         'priority' => 100
     ) );
 
@@ -50,10 +50,11 @@ add_action( 'customize_register', function( $wp_customize ) {
 			'label' => __( 'Font Selection', 'wellington-studio' ),
 			'section' => 'style',
 			'choices' => array(
-				'' => __( 'Default', 'wellington-studio' ),
-				'openSans-domine-font' => __( 'Open Sans/Domine', 'wellington-studio' ),
+				'default-font' => __( 'Default', 'wellington-studio' ),
 				'montserrat-oswald-font' => __( 'Montserrat/Oswald', 'wellington-studio' ),
 				'roboto-raleway-font' => __( 'Roboto/Raleway', 'wellington-studio' ),
+				'anton-barlow-font' =>  __('Anton/Barlow', 'wellington-studio'),
+				'roboto-condensed-font' => __('Roboto/Cabin', 'wellington-studio')
 			)
 		) );
 
