@@ -11,7 +11,8 @@
  * Domain Path: /languages
  * Template: genesis
  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+//@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&display=swap");
 
 // Bootstrap Core Variable Override
 @import "supporting/variables-bootstrap-core-override";
@@ -80,6 +81,8 @@
 
 // Gutenberg
 @import "supporting/gutenberg";
+
+@import "supporting/global";
 
 // Partials
 @import "supporting/partials/base";
