@@ -87,7 +87,7 @@ echo '
 				        <img src="' . $wst_slider1 . '" class="d-block w-100" alt="'. $slider1_alt .'">
 				        <div class="carousel-caption d-md-block">
 				          <h2 class="slider-one-title">' . $slider1title  . '</h2>
-				          <p class="slider-one-text lead">' . $slider1text	 . '</p>
+				          <p class="slider-one-text lead animate__animated animate__fadeInTopLeft">' . $slider1text	 . '</p>
 				        </div>
 				      </div>';
 						  if($wst_slider2 !== $default) {
