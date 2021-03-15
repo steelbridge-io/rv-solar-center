@@ -15,6 +15,8 @@
 }
 
 #dark-solar-top-feed {
+  position: relative;
+  z-index: 1;
   .card {
 	border: none;
 	.card-body {
@@ -76,6 +78,24 @@ section .overlay {
 #portrait-hero {
   &.card {
 	border: none;
+  }
+}
+
+#dark-solar-bottom-feed {
+  .row {
+	.col-md-3 {
+	  .card {
+		border: none;
+		.card-body {
+		  h2 {
+			font-size: 1.4rem;
+		  }
+		  .card-text {
+			font-size: 1.1rem;
+		  }
+		}
+	  }
+	}
   }
 }
 
