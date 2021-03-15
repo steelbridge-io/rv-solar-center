@@ -16,6 +16,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.slider-one-text {
+  animation: fadeInTopLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {}
 
