@@ -17,12 +17,11 @@ function bfg_theme_scripts() {
 	$version = wp_get_theme()->Version;
 	if ( !is_admin() ) {
 		wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/assets/css/custom.css', array(), '1.0', 'all' );
-
+		wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', array(), '', 'all');
 
 		if(function_exists('load_customizer_css')) {
 			wp_add_inline_style('custom-css', load_customizer_css());
 		}
-
 
 		// Disable the superfish script
 		wp_deregister_script( 'superfish' );
@@ -46,6 +45,12 @@ function bfg_theme_scripts() {
 		// Register theme JS and enqueue it
 		wp_register_script( 'app-js', BFG_THEME_JS . 'app.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-js' );
+
+		wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/76342ff491.js', [], 'null');
+		wp_enqueue_script('font-awesome');
+
+		wp_enqueue_script( 'scroll-reveal', 'https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js', array(), '', false );
+		wp_enqueue_script( '', BFG_THEME_JS . 'scroll-reveal.js', array(), '', true );
 	}
 }
 
