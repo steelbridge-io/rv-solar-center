@@ -144,9 +144,19 @@
 ---------------------------------------------------------------------------- */
 .widget-area {
 	#text-4 {
-		.textwidget {
-			padding: 1.618em 0 0 0;
+	  .textwidget {
+		padding: 1.618em 1em 0 0;
+		text-align: right;
+	  }
+	}
+  	#text-2 {
+	  .textwidget {
+		padding: 1.618em 0 0 0;
+		p img {
+		  display: block;
+		  margin: 0 auto;
 		}
+	  }
 	}
 }
 
@@ -161,7 +171,17 @@
   .widget-area {
 	#text-4 {
 	  .textwidget {
+		padding: 1.618em 0 0 0;
 		text-align: center;
+	  }
+	}
+	#text-2 {
+	  .textwidget {
+		padding: 1.618em 0 0 0;
+		p img {
+		  float: none;
+		  margin-bottom: 1.618em;
+		}
 	  }
 	}
   }
