@@ -54,7 +54,7 @@
 			   '<div class="card">' .
 			   '<a href="'. get_the_permalink() .'" title="'. get_the_title() .'"><img class="card-img-top" src="' . $featured_img_url . '" alt="' . $alt . '"></a>' .
 			   '<div class="card-body">' .
-			   '<h2 class="card-title"><a href="'. get_the_permalink() .'" title="'. get_the_title() .'">' . get_the_title() . '</a></h2>' .
+			   '<a href="'. get_the_permalink() .'" title="'. get_the_title() .'"><h2 class="card-title">' . get_the_title() . '</h2></a>' .
 			   '<p class="card-text">' . get_the_excerpt() . '</p>' .
 			   '</div>' .
 			   '</div>' .
