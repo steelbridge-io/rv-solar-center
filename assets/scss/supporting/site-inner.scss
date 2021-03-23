@@ -9,3 +9,8 @@
         }
     }
 }
+@media (min-width: 768px) {
+  .site-inner {
+	padding: $spacer*1 0 !important;
+  }
+}
