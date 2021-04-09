@@ -15,3 +15,10 @@ body.search {
     display: inline-block;
     margin-bottom: $spacer;
 }
+.category {
+  .site-container {
+	.site-inner {
+	  padding-top: 5em !important;
+	}
+  }
+}
