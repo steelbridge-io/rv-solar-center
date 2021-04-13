@@ -49,10 +49,10 @@ function bfg_theme_scripts() {
 		wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/76342ff491.js', [], 'null');
 		wp_enqueue_script('font-awesome');
 
-		wp_enqueue_script( 'scroll-reveal', 'https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js', array(), '', false );
-		wp_enqueue_script( '', BFG_THEME_JS . 'scroll-reveal.js', array(), '', true );
+		//wp_enqueue_script( 'theme-js', BFG_THEME_JS . 'theme.js', array(AOS), null, true );
 	}
 }
+
 
 // Editor Styles
 add_action( 'init', 'bfg_custom_editor_css' );

@@ -140,3 +140,10 @@ add_filter( 'get_custom_logo', function( $html ) {
 		return '<br><a class="moretag" href="'. get_permalink($post->ID) . '">Find Out More...</a>';
 	}
 	add_filter('excerpt_more', 'new_excerpt_more');
+
+	//** *Enable upload for webp image files.*/
+	function webp_upload_mimes($existing_mimes) {
+		$existing_mimes['webp'] = 'image/webp';
+		return $existing_mimes;
+	}
+	add_filter('mime_types', 'webp_upload_mimes');

@@ -1,5 +1,17 @@
 /** SCSS Helpers
 ====================== */
+img[data-lazyloaded]{
+  opacity: 0;
+}
+img.litespeed-loaded{
+  -webkit-transition: opacity 1s linear 0.5s;
+  -moz-transition: opacity 1s linear 0.5s;
+  transition: opacity .5s linear 0.5s;
+  opacity: 1;
+}
+html, body {
+  overflow-x: initial;
+}
 
 .nmt-1 {
   top: -1.7em !important;
