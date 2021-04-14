@@ -46,21 +46,6 @@
 		.social-links .label {
 			display: none;
 		}
-
-		/*.footer-widgets-1 {
-			float: left;
-			width: calc( 50% - 8px );
-		}*/
-
-		/*.footer-widgets-2 {
-			float: right;
-			width: calc( 50% - 8px );
-		}*/
-
-		/*.footer-widgets-3 {
-			overflow: hidden;
-			width: 100%;
-		}*/
 	}
 
 	@include media(">=tablet") {
