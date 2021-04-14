@@ -145,8 +145,14 @@
 .widget-area {
 	#text-4 {
 	  .textwidget {
-		padding: 1.618em 1em 0 0;
+		/*padding: 1.618em 1em 0 0;*/
 		text-align: right;
+		p a {
+		  color: #778081;
+		  &:hover {
+			text-decoration: none;
+		  }
+		}
 	  }
 	}
   	#text-2 {
