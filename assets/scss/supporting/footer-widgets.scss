@@ -44,9 +44,31 @@
 			background-color: $SolarBlack;
 			section {
 			  background-color: $SolarBlack;
+			  &.widget {
+				background-color: $SolarBlack;
+				.textwidget {
+				  background-color: $SolarBlack;
+				}
+			  }
 			}
 		  }
 		}
 	  }
 	}
+}
+
+#featured-page-2 {
+  .entry-header {
+	margin-top: .5em;
+  }
+  a {
+	img {
+	  padding-right: .5em;
+	}
+  }
+}
+#genesis-footer-widgets {
+  .entry-header {
+	margin-top: .5em;
+  }
 }
