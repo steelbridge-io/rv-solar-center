@@ -122,4 +122,18 @@ section .overlay {
 @media (max-width: 767.98px) {}
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .wp-block-cover.alignfull.front-page-backgound {
+	min-height: 273px !important;
+	height: 273px !important;
+  }
+  #hero-section {
+	margin-top: 2em;
+  }
+  .masthead-dark-solar.mt-5 {
+	margin-top: 0 !important;
+  }
+  .col-lg-5.background-darkauqua {
+	padding-top: 1.618em;
+  }
+}
