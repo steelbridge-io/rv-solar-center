@@ -40,6 +40,12 @@
 	  border-top-width: 10px;
 	  .wrap {
 		.row {
+		  .footer-widgets-1, .footer-widgets-2, .footer-widgets-3 {
+			background-color: $SolarBlack;
+		  }
+		  section {
+			background-color: $SolarBlack;
+		  }
 		  .widget-area {
 			background-color: $SolarBlack;
 			section {
@@ -70,5 +76,20 @@
 #genesis-footer-widgets {
   .entry-header {
 	margin-top: .5em;
+  }
+}
+
+.bg-dark-solar {
+  .wrap {
+	.row{
+	  .footer-widgets-1 {
+		#featured-page-2.widget,
+		#featured-page-3.widget,
+		#featured-page-4.widget{
+		  background-color: $SolarBlack !important;
+		  background: $SolarBlack !important;
+		}
+	  }
+	}
   }
 }
