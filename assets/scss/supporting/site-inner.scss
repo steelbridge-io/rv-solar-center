@@ -1,0 +1,16 @@
+/* Site Inner
+----------------------------------------------------------------------------- */
+.site-inner {
+    padding: $spacer*4 0;
+    .content {
+        margin-bottom: $spacer;
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+  .site-inner {
+	padding: $spacer*1 0 !important;
+  }
+}

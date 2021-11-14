@@ -1,0 +1,92 @@
+/* Navbar
+----------------------------------------------------------------------------- */
+
+.no-js .menu-item-has-children:hover .dropdown-menu,
+.no-js .menu-item-has-children:focus .dropdown-menu {
+    display: block;
+}
+
+/* Move navigation below wp-admin bar */
+.logged-in {
+    .navbar.fixed-top {
+        margin-top: 32px; // Move navigation below wp-admin bar
+    }
+}
+
+.navbar {
+    padding: {
+        left: 0;
+        right: 0;
+    }
+}
+
+.navbar-dark-solar {
+  a {
+	color: $LightGrey;
+	transition: 0.5s;
+	&:hover {
+	  color: $Teal;
+	  transition: 0.5s;
+	}
+  }
+}
+
+.bg-darksolar {
+  background-color: $DarkAqua;
+}
+
+.navbar-brand {
+  img {
+	width: 50%;
+  }
+}
+#menu-primary-navigation-menu {
+  font-size: 1.3rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .navbar-brand {
+	width: 60%;
+	img {
+	  width: 100%;
+	}
+  }
+  .navbar-toggler {
+	&:focus {
+	border: none;
+	outline: none;
+  }
+	.navbar-toggler-icon {
+	  padding-top: .2em;
+	  &:focus {
+		border: none;
+		outline: none;
+	  }
+	}
+
+  }
+}

@@ -1,0 +1,39 @@
+/** SCSS Global
+================== */
+.social-media-container {
+  a:nth-child(n+2) {
+	margin-left: 1em;
+  }
+  float: right;
+}
+.lead-large {
+  font-size: 2rem;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .social-media-container {
+	float: none;
+  }
+  .front-page-contact-us {
+	.gform_footer {
+	  .gform_button {
+		width: 100%;
+	  }
+	}
+  }
+}
+#gform_submit_button_1 {
+  width: 100%;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+

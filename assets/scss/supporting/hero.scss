@@ -1,0 +1,42 @@
+/** SCSS Hero
+=================== */
+#hero-section {
+  margin-top: 3em;
+}
+.logo {
+  width: 50%;
+  transition: 0.5s;
+}
+.carousel-item::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider-one-text {
+  animation: fadeInTopLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .logo {
+	width: 39%;
+	transition: 0.5s;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+
